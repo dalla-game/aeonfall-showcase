@@ -52,15 +52,14 @@ section img.background {
     position: absolute;
     top: 0;
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, 0) scale(2.8);
     background: no-repeat center;
     user-select: none;
     pointer-events: none;
     /*filter: grayscale(0.8);*/
     filter: brightness(50%);
     height: 100%;
-    width: 160vh; /* 100 * 16 / 9 */
-    min-width: 100%;
+    width: 80vh; /* 100 * 16 / 9 */
     min-height: 56.25vw; /* 100 * 9 / 16 */
 }
 
