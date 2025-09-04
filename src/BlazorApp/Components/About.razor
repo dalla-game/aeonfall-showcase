@@ -1,0 +1,58 @@
+<section class="dark" id="about" style="background-color: @PrimaryColor;">
+    <h2>About Us</h2>
+    @if (heroes is null)
+    {
+        <p><em>Loading...</em></p>
+    }
+    else
+    {
+        <div class="about-member">
+            @foreach (var hero in heroes)
+            {
+                <div class="box">
+                    <img src="@(hero.Src)" alt="@(hero.Alt)" />
+                    <p class="small">@hero.Title</p>
+                </div>
+            }
+        </div>
+    }
+    
+    <div class="about-content">
+    @if (aboutMe is null)
+    {
+        <p><em>Loading...</em></p>
+    }
+    else
+    {
+        <p class="large">@aboutMe.Description</p>
+        <hr />
+        <ul class="about-skill">
+        @foreach (var skill in aboutMe.Skills)
+        {
+            <li key="@skill">@skill</li>
+        }
+        </ul>
+    }
+    </div>
+</section>
+
+@code {
+    [Parameter, EditorRequired]
+    public required HttpClient Http { get; set; }
+
+    [Parameter, EditorRequired]
+    public required HeroImageService HeroImageService { get; set; }
+
+    [Parameter]
+    public string PrimaryColor { get; set; } = string.Empty;
+
+    private AboutMe? aboutMe;
+    private List<HeroImage>? heroes;
+
+    protected override async Task OnInitializedAsync()
+    {
+        aboutMe = await Http.GetFromJsonAsync<AboutMe>("sample-data/aboutme.json");
+        heroes = await HeroImageService.GetHeroListAsync(img => img.Name.StartsWith("member"));
+
+    }
+}

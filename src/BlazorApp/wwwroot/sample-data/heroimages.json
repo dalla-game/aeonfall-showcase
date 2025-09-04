@@ -1,0 +1,32 @@
+[
+  {
+    "name": "home",
+    "title": "home",
+    "src": "images/T_CI_A01.PNG",
+    "alt": "Dalla Games"
+  },
+  {
+    "name": "about",
+    "title": "about",
+    "src": "images/motion-background.jpg",
+    "alt": "gray abstract background"
+  },
+  {
+    "name": "member1",
+    "title": "Yunkyu Kim",
+    "src": "images/member1.png",
+    "alt": "gray abstract background"
+  },
+  {
+    "name": "member2",
+    "title": "Michael Chun",
+    "src": "images/member2.png",
+    "alt": "gray abstract background"
+  },
+  {
+    "name": "portfolio",
+    "title": "portfolio",
+    "src": "images/T_Title_A02.PNG",
+    "alt": "AeonFall"
+  }
+]
