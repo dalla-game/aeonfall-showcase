@@ -7,7 +7,7 @@
     }
     else
     {
-        <h2 style="color:var(--point-green)">@property.Company</h2>
+        <h3 style="color:var(--point-green)">@property.Company</h3>
     }
     @if (members is null)
     {
@@ -20,8 +20,8 @@
             {
                 <div class="box">
                     <img src="@(mem.Src)" alt="@(mem.Alt)" width="260" height="260" />
-                    <div><span class="small">@mem.Title</span> <span class="small" style="color:var(--point-green)">@mem.Name</span></div>
-                    <p class="small" style="white-space: nowrap;">@mem.Role</p>
+                    <div><span class="h5">@mem.Title</span> <span class="h5" style="color:var(--point-green)">@mem.Name</span></div>
+                    <p class="h6" style="white-space: nowrap;">@mem.Role</p>
                 </div>
             }
         </div>

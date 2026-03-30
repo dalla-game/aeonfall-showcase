@@ -10,7 +10,7 @@
         <div class="portfolio-hero">
              @if (property is not null)
             {
-                <span class="large" style="color:var(--point-green);">@property.Title</span><span class="large">@property.Subtitle</span>
+                <span class="h4">@property.Title</span><span class="h5" style="color:var(--point-green)">@property.Subtitle</span>
             }
             @if (hero is not null)
             {
@@ -21,7 +21,7 @@
             @foreach (var project in projects)
             {
                 <div class="box" key="@project.Title">
-                        <h3 style="color:var(--point-green); flex-basis: 40px;">@project.Title</h3>
+                        <h3_left style="color:var(--point-green); flex-basis: 40px;">@project.Title</h3_left>
                     <p class="small">@project.Description</p>
                 </div>
             }
