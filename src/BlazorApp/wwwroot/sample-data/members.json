@@ -1,0 +1,16 @@
+[
+  {
+    "title": "CEO",
+    "name": "JOONYOUNG CHUN",
+    "role": "Lead Artist / Concept Designer",
+    "src": "images/member1.png",
+    "alt": "gray abstract background"
+  },
+  {
+    "title": "CTO",
+    "name": "YUNKYU KIM",
+    "role": "Lead Programmer / Lead Game Designer",
+    "src": "images/member2.png",
+    "alt": "gray abstract background"
+  }
+]

@@ -2,15 +2,22 @@
 * CSS file to hold styles that apply across the application
 */
 
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@200;400;600;800&display=swap");
+@font-face {
+    font-family: 'Esamanru';
+    src: url('../fonts/esamanru Light.ttf') format('truetype');
+}
+
+:root {
+    --point-green: #00D67D;
+}
 
 html,
 body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-  font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: "Esamanru", sans-serif;
 }
 
 div#main {
@@ -64,7 +71,7 @@ section img.background {
 }
 
 .home-img {
-    transform: scale(0.5);
+    transform: scale(0.3);
 }
 
 
@@ -155,13 +162,20 @@ a:hover {
   color: #4e567e;
 }
 
+#header a {
+    color: var(--point-green);
+}
+#header a:hover {
+    font-weight: bold;
+}
+
 #home {
     min-height: 1600px;
 }
 
 #home-title {
     position: absolute; 
-    top: 10%; 
+    top: 5%; 
     left: 0%;
     right:0%;
 }

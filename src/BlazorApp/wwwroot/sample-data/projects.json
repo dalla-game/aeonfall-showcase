@@ -1,14 +1,18 @@
 [
   {
-    "title": "Defense",
-    "description": "Experience the intensity of holding the line against relentless enemy waves within a limited time."
+    "title": "Massive Waves",
+    "description": "Face relentless hordes at a scale that pushes your limits. Every battle is a fight against overwhelming numbers."
   },
   {
-    "title": "Randomness",
-    "description": "Explore dynamic environments with randomized terrain, resources, rewards, and powerful bosses."
+    "title": "Noise-Driven Threat",
+    "description": "Every action you take generates noise - and noise brings death. Expand carefully, or trigger unstoppable waves."
   },
   {
-    "title": "Strategy & Control",
-    "description": "Survive by mastering the balance between progression and the noise that lures enemies closer."
+    "title": "Hybrid Control",
+    "description": "Directly control your character while building and defending your base in real time. Balance action and strategy to survive."
+  },
+  {
+    "title": "Dynamic Survival",
+    "description": "Each run unfolds differently with shifting terrain, resources, and enemy patterns. Adapt or be overwhelmed."
   }
 ]

@@ -1,11 +1,12 @@
 @page "/"
 @inject HttpClient Http
 @inject HeroImageService HeroImageService
+@inject MemberService MemberService
 
 <PageTitle>Dalla Games</PageTitle>
 
 <Header />
 <Home Http=@Http HeroImageService=@HeroImageService PrimaryColor="#000000" />
 <Portfolio Http=@Http HeroImageService=@HeroImageService PrimaryColor="#202020" />
-<About Http=@Http HeroImageService=@HeroImageService PrimaryColor="#000000" />
+<About Http=@Http MemberService=@MemberService PrimaryColor="#000000" />
 <Footer Http=@Http PrimaryColor="#202020" SecondaryColor="#D2F1E4" />
