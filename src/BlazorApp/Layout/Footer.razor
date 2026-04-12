@@ -56,6 +56,12 @@
                     <img src="@icons.YouTube" alt="YouTube" class="social-icon" />
                 </a>
             }
+            @if (string.IsNullOrWhiteSpace(property.Steam) is false)
+            {
+                <a href="https://store.steampowered.com/app/@(property.Steam)" target="_blank" rel="noopener noreferrer">
+                    <img src="@icons.Steam" alt="Steam" class="social-icon" />
+                </a>
+            }
         </div>
         <p class="small" style="margin-top: 0; color: white;">@(property.Company)</p>
     }

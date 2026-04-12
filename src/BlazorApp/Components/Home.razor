@@ -17,7 +17,7 @@
     }
     else
     {
-        <div style="text-align: center;">
+        <div style="text-align: center; left: 0; right: 0; display: flex; flex-direction: column; justify-content: center; align-items: center;">
         <img class="home-img" src="images/T_CI_A01.PNG" />
         </div>
         @* <h1>@property.Name</h1> *@
@@ -25,13 +25,32 @@
     }
     </div>
 
-    <div style="position: absolute; top: 30%; left: 2rem;">
-    </div>
-    <div style="position: absolute; bottom: 8rem; left: 50%;">
-        <a href="#portfolio" target="_top">
-            <img src="images/down-arrow.svg" style="height: 3rem; width: 3rem;" alt="scroll down" />
+    <div style="position: absolute; top: 30%; left: 0; right: 0; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <img src="images/Wishlist.png" style="height: 30rem; width: auto;" />
+        <a href="https://store.steampowered.com/app/4582730/THE_AEON_FALL" target="_blank" style="margin-top: -60px;">
+            <img src="images/Steam_01.png" style="width: 12rem; height: auto; " />
         </a>
     </div>
+    @if (property is null)
+    {
+            
+    }
+    else
+    {
+        <div style="position: absolute; bottom: 8rem; left: 0; right: 0; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <h3 style="color:var(--point-green);">@property.Rights</h3>
+            <a href="#portfolio" target="_top">
+                <img src="images/down-arrow.svg" style="height: 3rem; width: 3rem; margin-top: 10px;" alt="scroll down" />
+            </a>
+        </div>
+        <div style="position: absolute; bottom: 16rem; left: 50%; transform:translateX(400px); display: flex; flex-direction: row; max-width: 28rem;">
+            <img src="images/Epic_MegaGrants_Recipient_logo.png" style="width: 10rem; height: auto;" />
+            <div style="margin: 10px">
+                <h3_left style="color:var(--point-green); flex-basis: 40px;">@property.EpicMegaGrants1</h3_left>
+                <p class="small" style="margin: 10px" >@property.EpicMegaGrants2</p>
+            </div>
+        </div>
+    }
 </section>
 
 @code {
